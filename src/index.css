@@ -2,6 +2,8 @@
 html, body, :global(#root) {
   height: 100%;
   width: 100%;
+  display: flex;
+  flex:1;
 }
 
 .c1{
@@ -17,15 +19,29 @@ html, body, :global(#root) {
   color: #EEEEEE;
 }
 
+.k1{
+  border-color: #232931;
+}
+.k2{
+  border-color: #393E46;
+}
+.k3{
+  border-color: #4ECCA3;
+}
+.k4{
+  border-color: #EEEEEE;
+}
+
+
 .b1{
-  color: #232931;
+  background: #232931;
 }
 .b2{
-  color: #393E46;
+  background: #393E46;
 }
 .b3{
-  color: #4ECCA3;
+  background: #4ECCA3;
 }
 .b4{
-  color: #EEEEEE;
+  background: #EEEEEE;
 }

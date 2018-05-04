@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'dva';
-import { Button } from 'antd-mobile';
+import { Button } from 'antd';
 
 function IndexPage() {
   return (

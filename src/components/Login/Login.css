@@ -3,6 +3,12 @@
     height: 100%;
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: center; 
     align-items: center;
+}
+
+.win{
+    height: 6rem;
+    width: 8rem;
+
 }

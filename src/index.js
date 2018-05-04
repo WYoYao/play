@@ -1,6 +1,6 @@
 import dva from 'dva';
 import './index.css';
-import 'antd-mobile/dist/antd-mobile.css';  // or 'antd-mobile/dist/antd-mobile.less'
+import 'antd/dist/antd.less';  // or 'antd-mobile/dist/antd-mobile.less'
 import './utils/rem.js'
 
 // 1. Initialize

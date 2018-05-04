@@ -5,9 +5,7 @@ import LoginComponent from '../components/Login/Login'
 
 function mapStateToProps(){
 
-  console.log(arguments);
-
   return {};
 }
 
-export default connect(mapStateToProps)(LoginComponent);
+export default connect()(LoginComponent);

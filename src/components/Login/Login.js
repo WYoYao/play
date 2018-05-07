@@ -32,8 +32,10 @@ function Login(login) {
     debugger;
     dispatch({
       type: 'login/login',
-      username,
-      password,
+      payload: {
+        username,
+        password,
+      }
     })
   }
 

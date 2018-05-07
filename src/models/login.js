@@ -14,10 +14,9 @@ export default {
     }
   },
   effects: {
-    *login(aaa, {
+    *login({ payload }, {
       put, call, select
     }) {
-      debugger;
 
       const data = yield call(loginService.login, payload);
 

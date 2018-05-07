@@ -1,4 +1,6 @@
 
+import * as loginService from '../services/login.js';
+
 export default {
   namespace: 'login',
   state: {
@@ -6,10 +8,23 @@ export default {
     password: "",
   },
   reducers: {
-    submit(state, { payload: { username, password } }) {
+    handlerInput(state, { username, password }) {
+
       return { ...state, username, password };
     }
   },
-  effects: {},
+  effects: {
+    *login(aaa, {
+      put, call, select
+    }) {
+      debugger;
+
+      const data = yield call(loginService.login, payload);
+
+      if (data.success) {
+        console.log('logun success');
+      }
+    }
+  },
   subscriptions: {},
 };

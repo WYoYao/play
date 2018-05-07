@@ -3,9 +3,9 @@ import { connect } from 'dva';
 import styles from './Login.css';
 import LoginComponent from '../components/Login/Login'
 
-function mapStateToProps(){
+function mapStateToProps({ login }) {
 
-  return {};
+  return login;
 }
 
-export default connect()(LoginComponent);
+export default connect(mapStateToProps)(LoginComponent);

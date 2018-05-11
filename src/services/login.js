@@ -5,13 +5,13 @@ export function login({
     password,
 }) {
 
-    console.log({
+    return request('/api/login', {
         username,
         password,
     });
+}
 
-    return request('/api/users', {
-        username,
-        password,
+export function getlogin() {
+    return request('/api/getLoginImage', {
     });
 }

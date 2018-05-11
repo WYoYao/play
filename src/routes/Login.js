@@ -4,7 +4,7 @@ import styles from './Login.css';
 import LoginComponent from '../components/Login/Login'
 
 function mapStateToProps({ login }) {
-  console.log(arguments);
+
   return login;
 }
 

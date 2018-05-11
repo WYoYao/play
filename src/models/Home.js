@@ -1,8 +1,8 @@
 
 export default {
-  namespace: 'test',
+  namespace: 'Home',
   state: {
-    name:"test",
+
   },
   reducers: {},
   effects: {},

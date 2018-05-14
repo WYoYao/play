@@ -38,7 +38,6 @@ export default {
     *getlogin({ }, {
       put, call, select
     }) {
-
       const { data } = yield call(loginService.getlogin);
       yield put({ type: 'loginUrl', payload: data })
     }

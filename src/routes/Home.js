@@ -4,8 +4,8 @@ import styles from './Home.css';
 import HomeComponent from '../components/Home/Home';
 
 
-function mapStateToProps() {
-  return {};
+function mapStateToProps({ Home }) {
+  return { ...Home };
 }
 
 export default connect(mapStateToProps)(HomeComponent);

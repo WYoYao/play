@@ -8,13 +8,17 @@ import Home from "./routes/Home.js";
 
 import Scan from "./routes/Scan.js";
 
+import Info from "./components/Info/Info";
+
+
+
 function RouterConfig({ history }) {
 
   return (
     <Router history={history}>
       <Route path="/login" component={Login} />
       <Route path="/" component={Home}>
-
+        <Route path="/info" component={Info} />
       </Route>
       <Route path="/Scan" component={Scan} />
     </Router>

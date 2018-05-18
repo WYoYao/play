@@ -10,7 +10,6 @@ function getSocket() {
 
     socket = io.connect('localhost:3000');
     socket.emit(socketTypeEnum.loginType, bot);
-
     if (window.localStorage.getItem)
         return socket;
 }

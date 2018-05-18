@@ -1,5 +1,6 @@
 import dva from 'dva';
 import './index.css';
+import './index.less';
 import 'antd/dist/antd.less';  // or 'antd-mobile/dist/antd-mobile.less'
 import './utils/rem.js'
 

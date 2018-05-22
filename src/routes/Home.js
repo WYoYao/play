@@ -4,7 +4,8 @@ import styles from './Home.css';
 import HomeComponent from '../components/Home/Home';
 
 
-function mapStateToProps({ Home }) {
+function mapStateToProps({ Home }, { history }) {
+
   return { ...Home };
 }
 

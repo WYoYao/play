@@ -1,12 +1,24 @@
 import React, { Component } from 'react';
+import { PropTypes } from 'prop-types';
 import styles from './UserList.css';
 import { List, Avatar } from 'antd';
-
+import { routerRedux } from 'dva/router';
 
 export default class UserList extends Component {
+  static contextTypes = {
+    router: PropTypes.object.isRequired
+  }
+  constructor(props, context) {
+    super(props, context);
+    let { dispatch } = props;
 
-  constructor(props) {
-    super(props);
+    this.setUser = item => {
+      dispatch({
+        type: "Home/setCurrentUser",
+        payload: item
+      });
+      this.context.router.push('/info');
+    }
   }
 
   render() {
@@ -33,7 +45,7 @@ export default class UserList extends Component {
         dataSource={this.props.contacts}
         renderItem={item => (
           <List.Item>
-            <List.Item.Meta
+            <List.Item.Meta onClick={this.setUser.bind(null, item)}
               avatar={<Avatar size="small" src={`http://192.168.100.30:3000${item.HeadImgUrl}`} />}
               title={<a dangerouslySetInnerHTML={{ __html: item.RemarkName || item.OrignalNickName || item.NickName }}></a>}
             />

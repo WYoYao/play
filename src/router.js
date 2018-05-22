@@ -8,7 +8,7 @@ import Home from "./routes/Home.js";
 
 import Scan from "./routes/Scan.js";
 
-import Info from "./components/Info/Info";
+import Info from "./routes/Info.js";
 
 
 

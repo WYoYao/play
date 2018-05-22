@@ -15,7 +15,6 @@ export default {
       return { ...state, username, password };
     },
     success(state, { payload }) {
-      console.log(payload);
       return state;
     },
     loginUrl(state, { url }) {

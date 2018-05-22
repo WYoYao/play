@@ -16,7 +16,6 @@ export default {
     },
     // 设置用户联系人
     setContacts(state, { payload: contacts }) {
-      console.log(JSON.stringify(contacts));
       return { ...state, contacts }
     },
     // 添加用户头像

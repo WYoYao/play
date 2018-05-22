@@ -6,8 +6,6 @@ import UserList from '../UserList/UserList'
 
 function Home({ children, dispatch, contacts, avatar, currentUser }) {
 
-  console.log(children);
-
   return (
     <Layout>
       <Header className={styles.header}>
@@ -18,24 +16,13 @@ function Home({ children, dispatch, contacts, avatar, currentUser }) {
       </Header>
       <Layout>
         <Sider className={styles.sider}>
-          <UserList contacts={contacts} />
+          <UserList {...{ dispatch, contacts }} />
         </Sider>
         <Content>
-          {
-
-
-
-            React.Children.map(children, (child) => {
-              return (
-                <child
-                  currentUser={currentUser}
-                />
-              )
-            })
-          }
+          {children}
         </Content>
       </Layout>
-      <Footer>Footer</Footer>
+      <Footer>底部内容暂无</Footer>
     </Layout>
   );
 }
